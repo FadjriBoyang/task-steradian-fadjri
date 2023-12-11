@@ -17,4 +17,8 @@
    * Disini saya membuat cluster minikube baru dengan profile elk, dan deploy ELK diatas kubernetes dengan file yaml pada folder ELK_kubernetes
    * Submit data samples
    * referensi: https://dev.to/sagary2j/elk-stack-deployment-using-minikube-single-node-architecture-16cl
+  
+   * Link Presentasi: https://www.canva.com/design/DAF2sF4P-lg/5DiRRCMAuz-4FLA5-vhaVg/view?utm_content=DAF2sF4P-lg&utm_campaign=designshare&utm_medium=link&utm_source=editor
+  
+  
 
