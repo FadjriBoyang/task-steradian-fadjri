@@ -1,0 +1,42 @@
+version: '3.1'
+
+services:
+  postgres:
+    image: postgres
+    restart: always
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_USER=fadjri
+      - POSTGRES_PASSWORD=fadjri
+      - POSTGRES_DB=postgres
+
+  apache-php:
+    image: php:apache
+    restart: always
+    ports:
+      - "8080:80"
+    volumes:
+      - ./php-files:/var/www/html
+
+
+  nginx:
+    image: nginx
+    restart: always
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx-conf:/etc/nginx/conf.d
+
+  golang:
+    image: goexamplev1
+    restart: always
+    ports:
+      - "8081:8080"
+
+
+
+volumes:
+  postgres_data:
