@@ -12,6 +12,9 @@
    * File Nginx service terdapat pada directory kubernetes/service, service digunakan sebagai routing trrafic untuk pods dengan label app: nginx
    * File Nginx ingress terdapat pada directory kubernetes/ingress, nginx-ingress mengarahkan lalu lintas HTTP dengan host "localhost" dan path "/" ke layanan backend nginx-service pada port 80
 3. Challenge ELK (elastic logstash kibana)
-   * Disini saya membuat cluster minikube baru dengan profile elk
-   
+   * Deploy ELK diatas docker menggunakan docker-compose.yml pada folder ELK_docker, dan submit data pada folder logstash_ingest_data
+   * referensi: https://www.elastic.co/blog/getting-started-with-the-elastic-stack-and-docker-compose
+   * Disini saya membuat cluster minikube baru dengan profile elk, dan deploy ELK diatas kubernetes dengan file yaml pada folder ELK_kubernetes
+   * Submit data samples
+   * referensi: https://dev.to/sagary2j/elk-stack-deployment-using-minikube-single-node-architecture-16cl
 
